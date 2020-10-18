@@ -5,7 +5,7 @@ db = SQLAlchemy()
 
 def create_app():
 	app = Flask(__name__,static_url_path="", static_folder="static")
-	app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://wdvsample:qwerty+456@db4free.net/wdvsampledb"
+	app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://jackdbusername:dbpassword@db4free.net/jackflaskproject"
 	
 	db.init_app(app)
 	
@@ -14,4 +14,4 @@ def create_app():
 		app.register_blueprint(routes)
 
 		db.create_all()
-		
+		return app

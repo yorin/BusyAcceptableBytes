@@ -27,6 +27,18 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 category = "main"
+description = "Flask simple mysql client"
+name = "flask-mysql"
+optional = false
+python-versions = "*"
+version = "1.5.1"
+
+[package.dependencies]
+Flask = "*"
+PyMySQL = "*"
+
+[[package]]
+category = "main"
 description = "Adds SQLAlchemy support to your Flask application."
 name = "flask-sqlalchemy"
 optional = false
@@ -112,7 +124,7 @@ dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-
 watchdog = ["watchdog"]
 
 [metadata]
-content-hash = "d25a15ab200637dcd3e50ceeff6c6aa4be9f2c6b485c7777b36f8469435208c0"
+content-hash = "36ab970989973e8fae6d948984ef23a1cca7dda9425363ea610b0a5d1ea3e917"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -123,6 +135,10 @@ click = [
 flask = [
     {file = "Flask-1.1.2-py2.py3-none-any.whl", hash = "sha256:8a4fdd8936eba2512e9c85df320a37e694c93945b33ef33c89946a340a238557"},
     {file = "Flask-1.1.2.tar.gz", hash = "sha256:4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060"},
+]
+flask-mysql = [
+    {file = "Flask-MySQL-1.5.1.tar.gz", hash = "sha256:7946e6367eaf1d87df3ae6b06af07b33fcd7cc8c04a9d0be2d208f23311d25e5"},
+    {file = "Flask_MySQL-1.5.1-py2.py3-none-any.whl", hash = "sha256:fea58ef9de703b91adcbeb16d2899b97375ff1ef5dc5c404d4ed06ae8cc27566"},
 ]
 flask-sqlalchemy = [
     {file = "Flask-SQLAlchemy-2.4.4.tar.gz", hash = "sha256:bfc7150eaf809b1c283879302f04c42791136060c6eeb12c0c6674fb1291fae5"},
